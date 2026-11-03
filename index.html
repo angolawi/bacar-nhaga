@@ -125,6 +125,7 @@
         <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#testemunho">Testemunho</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#povos-alvo">Povos Não Alcançados</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#projeto">O Projeto</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#documento-pdf">Projeto Completo (PDF)</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#orcamento">Orçamento</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#dados-bancarios">Apoio &amp; Pix</a>
       </nav>
@@ -540,6 +541,77 @@
       </div>
     </section>
 
+    <!-- SECTION: VISUALIZAÇÃO DO PROJETO COMPLETO (PDF) -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_24px_-2px_rgba(18,38,26,0.06)]" id="documento-pdf">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-outline-variant/30 pb-6 mb-6">
+        <div>
+          <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            <span class="material-symbols-outlined text-[18px]" data-icon="menu_book">menu_book</span>
+            Documento Oficial na Íntegra
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-headline-lg font-bold text-on-surface mt-1">
+            Projeto Missionário Detalhado
+          </h2>
+          <p class="text-on-surface-variant text-body-md mt-1">
+            Consulte todas as páginas do projeto missionário elaborado pelo Miss. Bacar Nhaga em formato original.
+          </p>
+        </div>
+        <!-- Botões de Ação para o Documento -->
+        <div class="flex flex-wrap items-center gap-3 shrink-0">
+          <a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md font-label-md transition-colors border border-outline-variant/30 font-semibold text-xs sm:text-sm" href="projeto-missionario-bacar-nhaga.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
+            Abrir em Nova Aba
+          </a>
+          <a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md font-label-md hover:bg-primary-container transition-colors shadow-sm font-semibold text-xs sm:text-sm" href="projeto-missionario-bacar-nhaga.pdf" download="PROJETO_MISSIONARIO_DETALHADO_BACAR_NHAGA.pdf">
+            <span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+            Baixar PDF Completo
+          </a>
+        </div>
+      </div>
+
+      <!-- Container do Visualizador Interativo com Fallback gracioso -->
+      <div class="rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container shadow-inner">
+        <!-- Barra de Status do Visualizador -->
+        <div class="bg-surface-container-high px-4 py-2.5 flex items-center justify-between border-b border-outline-variant/30 text-xs text-on-surface-variant">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+            <span class="font-semibold text-on-surface">PROJETO MISSIONÁRIO DETALHADO — Miss. Bacar Nhaga</span>
+          </div>
+          <span class="text-[11px] font-code-mono text-outline">Formato: PDF • Guiné-Bissau &amp; Brasil</span>
+        </div>
+
+        <!-- iframe com PDF embutido -->
+        <div class="w-full h-[650px] md:h-[800px] bg-surface-container-lowest relative">
+          <iframe 
+            src="projeto-missionario-bacar-nhaga.pdf#toolbar=1&navpanes=1" 
+            class="w-full h-full border-0" 
+            title="Visualizador do Projeto Missionário Detalhado - Bacar Nhaga">
+            <div class="p-8 text-center flex flex-col items-center justify-center h-full space-y-4">
+              <span class="material-symbols-outlined text-primary text-5xl" data-icon="picture_as_pdf">picture_as_pdf</span>
+              <p class="text-body-md text-on-surface font-medium">
+                Seu navegador não suporta visualização direta de PDFs incorporados.
+              </p>
+              <a href="projeto-missionario-bacar-nhaga.pdf" target="_blank" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-semibold">
+                Clique aqui para baixar ou visualizar o PDF diretamente
+              </a>
+            </div>
+          </iframe>
+        </div>
+
+        <!-- Rodapé do Visualizador -->
+        <div class="bg-surface-container-low px-4 py-3 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-primary text-[16px]" data-icon="info">info</span>
+            <span>Para navegar entre páginas no celular ou tablet, recomendamos abrir em tela cheia.</span>
+          </div>
+          <a href="projeto-missionario-bacar-nhaga.pdf" target="_blank" class="text-primary font-bold hover:underline flex items-center gap-1">
+            Visualizar em Tela Cheia
+            <span class="material-symbols-outlined text-[14px]" data-icon="fullscreen">fullscreen</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 4: ORÇAMENTO TRANSPARENTE & MANTENEDORES FIÉIS -->
     <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="orcamento">
       <div class="border-b border-outline-variant/30 pb-4 mb-8">
@@ -874,6 +946,8 @@
         <a class="hover:text-primary transition-colors" href="#povos-alvo">Povos Mandinga &amp; Balanta-Mané</a>
         <span>•</span>
         <a class="hover:text-primary transition-colors" href="#projeto">O Projeto</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#documento-pdf">Projeto Completo (PDF)</a>
         <span>•</span>
         <a class="hover:text-primary transition-colors" href="#orcamento">Transparência</a>
         <span>•</span>
