@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Bacar Nhaga • Guiné-Bissau | Cartão Missionário &amp; Apoio</title>
+  <title>Bacar Nhaga • Projeto A Verdade Que Liberta | Guiné-Bissau</title>
   <!-- Google Fonts: Newsreader & Plus Jakarta Sans -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -70,20 +70,8 @@
             "DEFAULT": "0.25rem",
             "lg": "0.5rem",
             "xl": "0.75rem",
+            "2xl": "1rem",
             "full": "9999px"
-          },
-          "spacing": {
-            "margin": "1rem",
-            "gutter-lg": "2rem",
-            "space-md": "1rem",
-            "gutter": "1rem",
-            "space-sm": "0.5rem",
-            "space-xl": "2.5rem",
-            "gutter-md": "1.5rem",
-            "space-xs": "0.25rem",
-            "space-lg": "1.5rem",
-            "margin-md": "2rem",
-            "margin-lg": "3rem"
           },
           "fontFamily": {
             "headline-lg": ["Newsreader", "serif"],
@@ -97,25 +85,7 @@
             "headline-md": ["Newsreader", "serif"],
             "quote-display": ["Newsreader", "serif"],
             "body-sm": ["Plus Jakarta Sans", "sans-serif"],
-            "headline-lg-mobile": ["Newsreader", "serif"],
-            "headline-xl-mobile": ["Newsreader", "serif"],
             "code-mono": ["Plus Jakarta Sans", "monospace"]
-          },
-          "fontSize": {
-            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
-            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
-            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
-            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-            "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
-            "quote-display": ["22px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "400" }],
-            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
-            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "code-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
           }
         },
       },
@@ -131,6 +101,7 @@
   </style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+
   <!-- Top Guinea-Bissau Heraldic Ribbon Accent -->
   <div aria-hidden="true" class="w-full flex h-2 overflow-hidden shadow-sm">
     <div class="w-1/3 bg-secondary flex items-center justify-center relative">
@@ -142,38 +113,43 @@
 
   <!-- Shared Component: TopNavBar -->
   <header class="bg-surface/95 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
-    <div class="flex justify-between items-center w-full px-4 md:px-8 max-w-4xl mx-auto h-16">
+    <div class="flex justify-between items-center w-full px-4 md:px-8 max-w-5xl mx-auto h-16">
       <!-- Brand Logo / Product Name -->
       <a class="text-headline-sm font-headline-sm font-semibold text-primary tracking-tight flex items-center gap-2 group" href="#">
         <span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
-        <span>Bacar Nhaga • Guiné-Bissau</span>
+        <span>Bacar Nhaga</span>
+        <span class="hidden sm:inline text-on-surface-variant font-normal text-xs">• Guiné-Bissau</span>
       </a>
       <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-6 text-label-md font-label-md">
-        <a class="text-primary font-semibold border-b-2 border-primary pb-1" href="#missao">Missão</a>
-        <a class="text-on-surface-variant hover:text-on-surface pb-1 transition-colors" href="#dados-bancarios">Dados Bancários</a>
-        <a class="text-on-surface-variant hover:text-on-surface pb-1 transition-colors" href="#noticias">Notícias</a>
+      <nav class="hidden lg:flex items-center gap-6 text-label-md font-label-md">
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#testemunho">Testemunho</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#povos-alvo">Povos Não Alcançados</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#projeto">O Projeto</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#orcamento">Orçamento</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#dados-bancarios">Apoio &amp; Pix</a>
       </nav>
       <!-- Trailing Action Buttons -->
       <div class="flex items-center gap-2">
-        <a class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors duration-150 active:scale-[0.98]" href="https://wa.me/5561992454063" rel="noopener noreferrer" target="_blank" title="Contato via WhatsApp">
+        <a class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" href="https://wa.me/5561992454063?text=Ol%C3%A1%20Bacar!%20Conheci%20seu%20projeto%20mission%C3%A1rio%20e%20gostaria%20de%20conversar." rel="noopener noreferrer" target="_blank" title="WhatsApp do Missionário">
           <span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
         </a>
-        <a class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors duration-150 active:scale-[0.98]" href="mailto:bacarboaz5bmn@gmail.com" title="Enviar E-mail">
+        <a class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" href="mailto:bacarboaz5bmn@gmail.com" title="Enviar E-mail">
           <span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
         </a>
-        <a class="ml-1 hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary text-label-md font-label-md hover:bg-primary-container transition-colors shadow-sm active:scale-[0.98]" href="#dados-bancarios">
-          <span class="material-symbols-outlined text-[16px]" data-icon="payments">payments</span>
-          Contribuir via Pix
+        <a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary text-label-md font-label-md hover:bg-primary-container transition-colors shadow-sm active:scale-[0.98]" href="#dados-bancarios">
+          <span class="material-symbols-outlined text-[16px]" data-icon="volunteer_activism">volunteer_activism</span>
+          <span class="hidden sm:inline">Adotar Projeto</span>
+          <span class="sm:hidden">Apoiar</span>
         </a>
       </div>
     </div>
   </header>
 
   <!-- Main Content Container -->
-  <main class="flex-1 w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-10 space-y-8 md:space-y-12">
-    <!-- Mission Profile Hero Card (Bento Master) -->
-    <section class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)] relative overflow-hidden" id="missao">
+  <main class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 py-6 md:py-10 space-y-12 md:space-y-16">
+
+    <!-- HERO SECTION (Bento Master Card) -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_24px_-2px_rgba(18,38,26,0.06)] relative overflow-hidden" id="missao">
       <!-- Decorative Guinea-Bissau Heraldic Accent Border -->
       <div aria-hidden="true" class="absolute top-0 left-0 right-0 h-1.5 flex">
         <div class="w-1/3 bg-secondary"></div>
@@ -183,339 +159,733 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-2">
         <!-- Left: Scripture Callout & Missionary Statement -->
         <div class="md:col-span-7 flex flex-col space-y-5 order-2 md:order-1">
-          <!-- Institutional & Field Badge Badges -->
+          <!-- Institutional Badges -->
           <div class="flex flex-wrap items-center gap-2">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
               <span class="material-symbols-outlined text-[14px]" data-icon="public">public</span>
-              Guiné-Bissau • África Ocidental
+              Guiné-Bissau • Setor de Begêne
             </span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
               AMIDE Missões
             </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-sm text-label-sm font-semibold">
+              Povos Mandinga &amp; Balanta-Mané
+            </span>
           </div>
+
           <!-- Scripture Plaque -->
-          <div class="p-5 md:p-6 rounded-lg bg-surface-container-low border-l-4 border-tertiary-fixed-dim relative">
-            <span class="text-tertiary-container/30 font-headline-xl text-5xl leading-none absolute top-2 right-4 select-none font-serif">“</span>
-            <blockquote class="text-quote-display font-quote-display text-on-surface italic relative z-10">
-              «... e conhecereis a verdade, e a verdade vos libertará.»
+          <div class="p-5 md:p-6 rounded-xl bg-surface-container-low border-l-4 border-tertiary-fixed-dim relative">
+            <span class="text-tertiary-container/20 font-headline-xl text-5xl leading-none absolute top-2 right-4 select-none font-serif">“</span>
+            <blockquote class="text-quote-display font-quote-display text-on-surface italic relative z-10 leading-snug">
+              «E conhecereis a verdade, e a verdade vos libertará.»
             </blockquote>
             <p class="mt-2 text-label-md font-label-md text-tertiary font-bold tracking-wide">
               (JOÃO 8:32)
             </p>
           </div>
+
           <!-- Project & Mission Identification -->
           <div>
-            <span class="inline-block px-2.5 py-0.5 rounded text-label-sm font-label-sm bg-primary/10 text-primary font-semibold mb-1">
-              Projeto: A Verdade Que Liberta
-            </span>
-            <h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">
-              Missão aos Povos Não Alcançados da Guiné-Bissau
+            <div class="inline-block px-2.5 py-0.5 rounded text-label-sm font-label-sm bg-primary/10 text-primary font-bold uppercase tracking-wider mb-2">
+              Projeto Missionário: A Verdade Que Liberta
+            </div>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-headline-lg font-bold text-primary leading-tight">
+              Anunciando Cristo aos Povos Não Alcançados da África Ocidental
             </h1>
-            <p class="mt-2 text-body-md font-body-md text-on-surface-variant">
-              Levando transformação integral, o evangelho da graça e apoio humanitário às comunidades e aldeias com menor acesso à mensagem libertadora de Cristo.
+            <p class="mt-3 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Resgatado pela graça entre o povo Balanta, o missionário Bacar Nhaga dedica sua vida a levar a luz de Cristo a grupos étnicos ainda sem testemunho bíblico no norte e leste da Guiné-Bissau.
             </p>
           </div>
+
           <!-- Quick Micro Actions -->
           <div class="pt-2 flex flex-wrap items-center gap-3">
-            <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-transform active:scale-[0.98] shadow-sm" href="https://wa.me/5561992454063" rel="noopener noreferrer" target="_blank">
-              <span class="material-symbols-outlined text-[18px]" data-icon="forum">forum</span>
-              Conectar via WhatsApp
+            <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-transform active:scale-[0.98] shadow-sm font-semibold" href="#projeto">
+              <span class="material-symbols-outlined text-[18px]" data-icon="explore">explore</span>
+              Conhecer o Projeto
             </a>
-            <a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" href="#dados-bancarios">
-              <span class="material-symbols-outlined text-[18px]" data-icon="volunteer_activism">volunteer_activism</span>
-              Fazer Oferta
+            <a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors font-semibold" href="#dados-bancarios">
+              <span class="material-symbols-outlined text-[18px]" data-icon="payments">payments</span>
+              Contribuir via Pix
+            </a>
+            <a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-primary hover:bg-primary/10 transition-colors font-label-lg text-label-lg font-semibold" href="#intercessao">
+              <span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+              Orar pelo Campo
             </a>
           </div>
         </div>
+
         <!-- Right: Missionary Portrait with Golden Accent Frame -->
         <div class="md:col-span-5 flex flex-col items-center justify-center order-1 md:order-2">
           <div class="relative group">
             <!-- Savanna Gold & Guinea-Bissau Halo Ring -->
             <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-secondary via-tertiary-fixed-dim to-primary-container opacity-85 blur-[2px] group-hover:opacity-100 transition-opacity"></div>
             <!-- Portrait Container -->
-            <div class="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-surface-container-lowest bg-surface-container shadow-md">
-              <img alt="Retrato do missionário Bacar Nhaga em moldura dourada" class="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCijZYca5vhI7bxGOHucaxix3pXoHMs4fTF1rlEolGBabRCDfYT8fWiQIfGu2ERDxajUS6j5UmfgMu0ja8GFTqJpCjRYPoKQEwuWCmewcns6Ll_ZOUd-nCVoFKLcVaeIYDV4-4ZATDwrQaaPlM5nnxOGBoh3KMfU1G_JsVACzb9B1XKfwGYTJ3ovZEpJnAPCIgt9kzb98vaCQKJMB7aJG-_-6D7TuHFg7qJhfyPagZO_tRpA6kCCOcq7A"/>
+            <div class="relative w-48 h-48 sm:w-60 sm:h-60 rounded-full overflow-hidden border-4 border-surface-container-lowest bg-surface-container shadow-md">
+              <img alt="Retrato do missionário Bacar Nhaga em moldura" class="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCijZYca5vhI7bxGOHucaxix3pXoHMs4fTF1rlEolGBabRCDfYT8fWiQIfGu2ERDxajUS6j5UmfgMu0ja8GFTqJpCjRYPoKQEwuWCmewcns6Ll_ZOUd-nCVoFKLcVaeIYDV4-4ZATDwrQaaPlM5nnxOGBoh3KMfU1G_JsVACzb9B1XKfwGYTJ3ovZEpJnAPCIgt9kzb98vaCQKJMB7aJG-_-6D7TuHFg7qJhfyPagZO_tRpA6kCCOcq7A"/>
             </div>
             <!-- Cultural Badge Accent at base of portrait -->
             <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-surface-container-lowest px-4 py-1 rounded-full shadow border border-outline-variant/40 flex items-center gap-1.5 whitespace-nowrap">
               <span class="text-secondary text-xs">★</span>
-              <span class="font-headline-sm text-headline-sm font-semibold text-on-surface tracking-wide">BACAR NHAGA</span>
+              <span class="font-headline-sm text-sm sm:text-base font-bold text-on-surface tracking-wide">BACAR NHAGA</span>
               <span class="text-primary text-xs">★</span>
             </div>
           </div>
-          <p class="mt-5 text-label-sm font-label-sm text-on-surface-variant text-center max-w-xs">
-            Missionário de campo enviado aos povos não alcançados • Guiné-Bissau
-          </p>
+          <div class="mt-6 text-center space-y-1">
+            <p class="text-label-md font-label-md font-semibold text-primary">
+              Graduado em Missiologia &amp; Ministério Pastoral
+            </p>
+            <p class="text-label-sm font-label-sm text-on-surface-variant max-w-xs">
+              CEAM / AMIDE • Igreja Evangélica de Brá (GB) &amp; Igreja Presbiteriana do Paranoá (DF)
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Cultural Interlude Strip -->
-    <div aria-hidden="true" class="flex items-center justify-center gap-3 py-1">
-      <div class="h-[1px] bg-outline-variant/40 flex-1 max-w-xs"></div>
-      <div class="flex items-center gap-1.5 text-xs text-secondary">
-        <span class="w-2 h-2 rounded-full bg-secondary"></span>
-        <span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
-        <span class="w-2 h-2 rounded-full bg-primary-container"></span>
-      </div>
-      <div class="h-[1px] bg-outline-variant/40 flex-1 max-w-xs"></div>
-    </div>
-
-    <!-- Dual Core Panels (Digital Business Card format) -->
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-      <!-- PANEL A: Receba Notícias & Contato -->
-      <section class="md:col-span-5 flex flex-col justify-between bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="noticias">
-        <div>
-          <!-- Header -->
-          <div class="flex items-center gap-2.5 pb-4 border-b border-outline-variant/20">
-            <div class="w-9 h-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-              <span class="material-symbols-outlined text-[20px]" data-icon="campaign">campaign</span>
-            </div>
-            <div>
-              <span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">Conexão Missionária</span>
-              <h2 class="text-headline-sm font-headline-sm font-semibold text-on-surface">Receba Notícias</h2>
-            </div>
-          </div>
-          <p class="text-body-sm font-body-sm text-on-surface-variant mt-4">
-            Acompanhe em tempo real os relatórios ministeriais, testemunhos de batismos e motivos de oração do campo da Guiné-Bissau.
-          </p>
-          <!-- Contact Channel List -->
-          <div class="mt-5 space-y-3">
-            <!-- WhatsApp Channel -->
-            <a class="group flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low hover:bg-primary-container/10 border border-outline-variant/20 hover:border-primary/40 transition-colors" href="https://wa.me/5561992454063" rel="noopener noreferrer" target="_blank">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center">
-                  <span class="material-symbols-outlined text-[18px]" data-icon="phone_iphone">phone_iphone</span>
-                </div>
-                <div>
-                  <div class="text-label-sm font-label-sm text-on-surface-variant">WhatsApp Oficial</div>
-                  <div class="text-label-lg font-label-lg font-semibold text-on-surface font-code-mono">+55 (61) 99245-4063</div>
-                </div>
-              </div>
-              <span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-            </a>
-            <!-- Email Channel -->
-            <div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-outline-variant/20">
-              <div class="flex items-center gap-3 overflow-hidden">
-                <div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
-                </div>
-                <div class="overflow-hidden">
-                  <div class="text-label-sm font-label-sm text-on-surface-variant">E-mail Direto</div>
-                  <a class="text-body-sm font-body-sm font-medium text-primary hover:underline truncate block" href="mailto:bacarboaz5bmn@gmail.com">
-                    bacarboaz5bmn@gmail.com
-                  </a>
-                </div>
-              </div>
-              <button aria-label="Copiar e-mail do missionário" class="shrink-0 p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant transition-colors" onclick="copyToClipboard('bacarboaz5bmn@gmail.com', this)" title="Copiar e-mail">
-                <span class="material-symbols-outlined text-[18px]" data-icon="content_copy">content_copy</span>
-              </button>
-            </div>
-            <!-- Project Banner -->
-            <div class="p-3.5 rounded-lg bg-tertiary-fixed/30 border border-tertiary-fixed-dim/40 flex items-start gap-2.5">
-              <span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" data-icon="auto_stories">auto_stories</span>
-              <div>
-                <span class="text-label-sm font-label-sm text-tertiary font-bold uppercase">Projeto em Andamento</span>
-                <p class="text-body-sm font-body-sm text-on-surface font-medium">A Verdade Que Liberta — Evangelização, Discipulado e Apoio Comunitário.</p>
-              </div>
-            </div>
-          </div>
+    <!-- SECTION 1: QUEM É BACAR NHAGA - TESTEMUNHO E TRAJETÓRIA -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="testemunho">
+      <div class="border-b border-outline-variant/30 pb-4 mb-8">
+        <div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+          <span class="text-xs">★</span> Da Tradição Animista ao Chamado Transcultural
         </div>
-        <!-- Quick Newsletter / Prayer Request Prompt -->
-        <div class="mt-6 pt-4 border-t border-outline-variant/20">
-          <label class="block text-label-sm font-label-sm text-on-surface-variant mb-2 font-medium" for="newsletter-input">
-            Cadastrar e-mail para receber informativos mensais:
-          </label>
-          <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Obrigado pelo seu interesse! Você será incluído nos informativos do missionário Bacar Nhaga.');">
-            <input class="flex-1 px-3 py-2 text-body-sm rounded-lg bg-surface border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="newsletter-input" placeholder="seu.email@exemplo.com" required="" type="email"/>
-            <button class="px-3.5 py-2 rounded-lg bg-primary text-on-primary text-label-sm font-label-sm hover:bg-primary-container transition-colors shrink-0" type="submit">
-              Assinar
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- PANEL B: Dados Bancários & Contribuição (PIX + Nubank) -->
-      <section class="md:col-span-7 bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 md:p-8 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)] flex flex-col justify-between" id="dados-bancarios">
-        <div>
-          <!-- Header with Trust Emblems -->
-          <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-outline-variant/20">
-            <div class="flex items-center gap-2.5">
-              <div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
-                <span class="material-symbols-outlined text-[20px]" data-icon="account_balance">account_balance</span>
-              </div>
-              <div>
-                <span class="text-label-sm font-label-sm text-secondary uppercase font-bold tracking-wider">Apoio Financeiro Direto</span>
-                <h2 class="text-headline-sm font-headline-sm font-semibold text-on-surface">Dados Bancários &amp; Pix</h2>
-              </div>
-            </div>
-            <!-- Flag Pair Emblem -->
-            <div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1 rounded-full text-xs font-label-sm text-on-surface-variant">
-              <span>🇬🇼 Guiné-Bissau</span>
-              <span class="text-outline-variant">•</span>
-              <span>🇧🇷 Brasil</span>
-            </div>
-          </div>
-          <!-- Structured Banking Grid & QR Module -->
-          <div class="mt-6 grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
-            <!-- Bank Metadata Fields -->
-            <div class="sm:col-span-7 space-y-2.5">
-              <!-- Banco -->
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex justify-between items-center">
-                <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Banco</span>
-                <span class="text-label-md font-label-md font-semibold text-on-surface">Nubank (0260)</span>
-              </div>
-              <!-- Agência -->
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex justify-between items-center">
-                <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Agência</span>
-                <span class="text-label-md font-label-md font-code-mono font-semibold text-on-surface">0001</span>
-              </div>
-              <!-- Conta Corrente -->
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex justify-between items-center">
-                <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Conta Corrente</span>
-                <span class="text-label-md font-label-md font-code-mono font-semibold text-on-surface">219209077-4</span>
-              </div>
-              <!-- Favorecido -->
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex justify-between items-center">
-                <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Titular</span>
-                <span class="text-label-md font-label-md font-semibold text-on-surface">Bacar Nhaga</span>
-              </div>
-            </div>
-            <!-- QR Code Card Container -->
-            <div class="sm:col-span-5 flex flex-col items-center text-center p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
-              <!-- High-Contrast Clean QR representation -->
-              <div class="bg-surface-container-lowest p-2 rounded-lg shadow-inner border border-outline-variant/20 flex items-center justify-center">
-                <svg viewBox="0 0 49 49" class="w-32 h-32 text-on-surface" xmlns="http://www.w3.org/2000/svg">
-                  <path class="qrline" stroke="#171d1a" stroke-width="1" d="M2 2.5h7m2 0h2m2 0h2m1 0h2m3 0h1m3 0h1m4 0h1m1 0h1m3 0h1m1 0h7m-45 1h1m5 0h1m2 0h1m4 0h1m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h3m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h1m2 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h3m1 0h3m3 0h1m1 0h1m1 0h3m1 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h2m1 0h1m1 0h6m2 0h1m2 0h2m2 0h3m1 0h1m1 0h3m1 0h1m-45 1h1m5 0h1m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h4m1 0h1m1 0h1m6 0h1m5 0h1m-45 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-37 1h1m2 0h3m1 0h2m3 0h1m3 0h2m2 0h1m1 0h4m1 0h2m-37 1h1m1 0h5m2 0h1m1 0h3m3 0h1m1 0h6m2 0h1m1 0h2m2 0h1m1 0h1m2 0h5m-42 1h3m1 0h1m4 0h2m1 0h3m2 0h1m2 0h1m1 0h1m1 0h1m4 0h2m1 0h1m2 0h1m2 0h1m2 0h3m-42 1h4m1 0h3m2 0h2m3 0h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h4m2 0h1m-43 1h1m3 0h1m2 0h1m1 0h1m2 0h2m1 0h3m7 0h1m2 0h1m1 0h3m3 0h1m2 0h1m1 0h2m-42 1h3m1 0h3m3 0h3m1 0h1m1 0h2m2 0h1m2 0h1m1 0h2m2 0h1m4 0h1m1 0h1m-36 1h2m4 0h2m1 0h1m2 0h1m1 0h1m7 0h1m2 0h2m1 0h2m1 0h1m2 0h1m5 0h2m-42 1h1m1 0h1m1 0h1m4 0h1m3 0h2m1 0h3m1 0h8m2 0h1m1 0h2m1 0h4m1 0h2m-43 1h1m2 0h1m2 0h3m2 0h1m2 0h2m1 0h1m5 0h1m2 0h1m2 0h4m3 0h1m2 0h1m1 0h1m1 0h1m-41 1h5m1 0h1m2 0h3m2 0h1m1 0h2m4 0h1m2 0h1m3 0h3m2 0h2m1 0h1m-41 1h1m3 0h1m1 0h1m2 0h2m1 0h2m1 0h2m1 0h1m2 0h2m4 0h1m1 0h1m1 0h1m3 0h1m2 0h1m2 0h3m-44 1h6m2 0h2m1 0h3m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m3 0h1m1 0h6m-39 1h1m1 0h2m1 0h1m4 0h2m1 0h2m1 0h1m9 0h1m1 0h4m2 0h3m1 0h5m-44 1h2m1 0h6m1 0h1m1 0h3m2 0h1m1 0h8m5 0h8m1 0h1m-42 1h2m1 0h1m3 0h3m1 0h1m1 0h4m2 0h1m3 0h1m2 0h1m2 0h1m2 0h1m1 0h2m3 0h1m1 0h3m-44 1h1m2 0h1m1 0h1m1 0h1m1 0h2m2 0h2m2 0h1m1 0h1m1 0h1m1 0h3m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h2m-43 1h1m2 0h1m3 0h1m1 0h2m1 0h2m2 0h2m1 0h1m3 0h1m3 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h1m1 0h7m1 0h1m2 0h2m1 0h1m1 0h1m1 0h5m1 0h2m1 0h2m2 0h9m1 0h2m-43 1h1m1 0h1m3 0h1m1 0h1m2 0h1m1 0h6m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h2m-43 1h7m1 0h1m1 0h2m1 0h2m8 0h3m2 0h2m2 0h1m2 0h1m1 0h1m1 0h2m-43 1h1m3 0h2m1 0h4m2 0h4m2 0h3m1 0h2m2 0h2m1 0h3m2 0h2m2 0h1m1 0h4m-45 1h1m2 0h2m1 0h3m2 0h2m2 0h1m3 0h1m1 0h1m3 0h3m1 0h1m6 0h1m3 0h2m1 0h1m-43 1h1m2 0h1m3 0h1m7 0h2m4 0h2m3 0h2m1 0h2m1 0h1m2 0h2m1 0h1m2 0h1m-43 1h2m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m2 0h1m4 0h1m1 0h4m5 0h3m2 0h3m1 0h1m-44 1h3m1 0h1m2 0h3m1 0h1m2 0h2m1 0h4m1 0h1m1 0h1m2 0h1m1 0h5m1 0h5m2 0h1m-43 1h2m2 0h3m1 0h1m2 0h1m2 0h2m2 0h1m1 0h1m3 0h1m8 0h2m1 0h1m2 0h1m1 0h1m2 0h1m-45 1h2m3 0h1m3 0h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h3m4 0h1m1 0h1m4 0h1m4 0h3m-41 1h1m1 0h1m1 0h2m1 0h1m4 0h2m2 0h1m3 0h1m2 0h1m1 0h1m10 0h3m-42 1h4m5 0h1m1 0h5m4 0h4m3 0h6m1 0h5m1 0h3m-44 1h1m2 0h2m1 0h1m1 0h6m3 0h2m1 0h5m2 0h1m2 0h1m2 0h1m2 0h8m-36 1h3m3 0h1m1 0h2m1 0h2m3 0h1m5 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h7m3 0h3m1 0h1m1 0h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-43 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h5m1 0h2m8 0h6m-42 1h1m1 0h3m1 0h1m1 0h1m3 0h1m8 0h1m5 0h1m1 0h2m1 0h2m2 0h2m2 0h1m2 0h2m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m3 0h1m3 0h2m2 0h2m2 0h1m3 0h4m1 0h1m2 0h2m-44 1h1m5 0h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m2 0h2m2 0h2m5 0h1m-43 1h7m1 0h4m2 0h1m6 0h2m1 0h2m1 0h1m5 0h2m2 0h5m1 0h1"/>
-                </svg>
-              </div>
-              <p class="mt-2 text-label-sm font-label-sm text-on-surface-variant leading-tight">
-                Aponte a câmera do seu banco para doar via Pix
-              </p>
-            </div>
-          </div>
-          <!-- Highlight Pix Key Copy Box -->
-          <div class="mt-5 p-4 rounded-xl bg-surface-container border-2 border-primary/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div>
-              <div class="flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-bold">
-                <span class="material-symbols-outlined text-[16px]" data-icon="key">key</span>
-                CHAVE PIX (TELEFONE)
-              </div>
-              <div class="text-body-lg font-body-lg font-code-mono font-bold text-on-surface mt-0.5 tracking-wide">
-                (61) 99245-4063
-              </div>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-              <button class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md font-label-md active:scale-[0.98] transition-all border border-outline-variant/40" id="pixCopiaColaBtn" onclick="copyPixCopiaECola()" title="Copiar código Pix Copia e Cola">
-                <span class="material-symbols-outlined text-[18px]" data-icon="qr_code" id="pixCopiaColaIcon">qr_code</span>
-                <span id="pixCopiaColaText">Copia e Cola</span>
-              </button>
-              <button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md font-label-md hover:bg-primary-container active:scale-[0.98] transition-all shadow-sm" id="pixCopyBtn" onclick="copyPixKey('61992454063')">
-                <span class="material-symbols-outlined text-[18px]" data-icon="content_copy" id="pixCopyIcon">content_copy</span>
-                <span id="pixCopyText">Copiar Chave</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Institutional Alignment Card: AMIDE Missões -->
-        <div class="mt-6 pt-4 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-3 bg-surface-container-low p-3.5 rounded-lg">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-md bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center p-1">
-              <span class="material-symbols-outlined text-primary text-[24px]" data-icon="hourglass_empty">hourglass_empty</span>
-            </div>
-            <div>
-              <div class="text-label-md font-label-md font-bold text-primary">AMIDE Missões</div>
-              <div class="text-label-sm font-label-sm text-on-surface-variant">Associação Missionária Para Difusão do Evangelho</div>
-            </div>
-          </div>
-          <a class="inline-flex items-center gap-1 text-label-sm font-label-sm font-semibold text-primary hover:underline" href="https://www.amide.org.br" rel="noopener noreferrer" target="_blank">
-            <span>www.amide.org.br</span>
-            <span class="material-symbols-outlined text-[14px]" data-icon="open_in_new">open_in_new</span>
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <!-- About The Missionary Work & Context Section -->
-    <section class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 md:p-8 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]">
-      <div class="max-w-2xl mx-auto text-center space-y-3">
-        <span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider">
-          <span class="text-xs">★</span> Chamado &amp; Propósito no Campo
-        </span>
-        <h2 class="text-headline-md font-headline-md text-on-surface font-semibold">
-          Alcançando os Não Alcançados com Verdade e Esperança
+        <h2 class="text-2xl md:text-3xl font-headline-lg font-bold text-on-surface mt-1">
+          Testemunho de Conversão e Ministério
         </h2>
-        <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-          Na Guiné-Bissau, dezenas de etnias ainda aguardam o primeiro testemunho do evangelho em sua língua materna. O ministério do missionário Bacar Nhaga concentra-se na plantação de comunidades de fé, alfabetização, discipulado de novos crentes e apoio comunitário humanitário.
+        <p class="text-on-surface-variant text-body-md mt-1">
+          «E não há salvação em nenhum outro; porque abaixo do céu não existe nenhum outro nome, dado entre os homens, pelo qual importa que sejamos salvos.» (Atos 4:12)
         </p>
       </div>
-      <!-- Bento Features -->
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col items-center text-center">
-          <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-2.5">
-            <span class="material-symbols-outlined text-[20px]" data-icon="groups">groups</span>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Testemunho Narrativo -->
+        <div class="md:col-span-7 space-y-4 text-body-md text-on-surface leading-relaxed">
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+            <h3 class="font-bold text-primary font-headline-sm text-lg flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]" data-icon="church">church</span>
+              O Encontro aos 9 Anos de Idade
+            </h3>
+            <p class="mt-2 text-sm text-on-surface-variant">
+              Nascido em 13/03/1995 em uma aldeia na região de <strong>Oio</strong>, no norte da Guiné-Bissau, Bacar veio de uma família totalmente animista. Aos 9 anos, uma missionária visitou a aldeia realizando cultos noturnos. Foi ali que ele entregou a vida a Jesus Cristo. Quando ela partiu, o jovem Bacar caminhava <strong>7 km todos os domingos</strong> até a comunidade vizinha para frequentar a Escola Bíblica Dominical.
+            </p>
           </div>
-          <h3 class="text-label-lg font-label-lg font-bold text-on-surface">Etnias Não Alcançadas</h3>
-          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Presença relacional em aldeias com barreiras culturais ao cristianismo.</p>
+
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+            <h3 class="font-bold text-primary font-headline-sm text-lg flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]" data-icon="assistant_direction">assistant_direction</span>
+              Bissau e a Confirmação Vocacional (2006)
+            </h3>
+            <p class="mt-2 text-sm text-on-surface-variant">
+              Após o falecimento de seu pai, foi morar na capital, Bissau, integrando a <strong>Igreja Evangélica de Brá</strong>. Em 2006, durante a 1ª Conferência Missionária da igreja, confirmou publicamente seu chamado irrenunciável para anunciar as Boas-Novas aos Povos Não Alcançados (PNAs).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+            <h3 class="font-bold text-primary font-headline-sm text-lg flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]" data-icon="school">school</span>
+              Preparo Teológico no Brasil &amp; Aliança Eclesiástica
+            </h3>
+            <p class="mt-2 text-sm text-on-surface-variant">
+              Graduou-se em Missiologia e Ministério Pastoral pelo <strong>CEAM – Centro de Estudos Avançados de Missões</strong> da agência missionária <strong>AMIDE</strong>. Desde 2023, congrega e serve na <strong>Igreja Presbiteriana do Paranoá (DF)</strong>, em estreita comunhão com sua igreja de origem em Brá (Guiné-Bissau).
+            </p>
+          </div>
         </div>
-        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col items-center text-center">
-          <div class="w-10 h-10 rounded-full bg-tertiary-fixed/60 text-tertiary flex items-center justify-center mb-2.5">
-            <span class="material-symbols-outlined text-[20px]" data-icon="menu_book">menu_book</span>
+
+        <!-- Experiência Ministerial & Linha do Tempo -->
+        <div class="md:col-span-5 bg-surface-container-low rounded-xl p-5 border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <h3 class="text-label-lg font-label-lg font-bold text-primary uppercase tracking-wider flex items-center gap-2 border-b border-outline-variant/30 pb-2">
+              <span class="material-symbols-outlined text-[20px]" data-icon="history_edu">history_edu</span>
+              Experiência Prática no Campo
+            </h3>
+            <ul class="mt-4 space-y-3 text-xs sm:text-sm text-on-surface-variant">
+              <li class="flex items-start gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+                <span><strong>2006–2023:</strong> Fundador e presidente da LEEPDBN (evangelização em escolas públicas e particulares).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-tertiary mt-1.5 shrink-0"></span>
+                <span><strong>2007–2023:</strong> Professor de EBD e líder de jovens na Igreja Evangélica de Brá.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span>
+                <span><strong>2010–2015:</strong> Plantação da congregação pioneira de Tira-Meia (campo missionário a 12 km de Bissau).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+                <span><strong>2016–2023:</strong> Diretor Nacional Adjunto da ONG internacional <em>Children in Christ (CIC)</em>, servindo crianças em situação de rua.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-primary-container mt-1.5 shrink-0"></span>
+                <span><strong>2014–2023:</strong> Administrador e membro da Diretoria Executiva da Igreja Evangélica de Brá.</span>
+              </li>
+            </ul>
           </div>
-          <h3 class="text-label-lg font-label-lg font-bold text-on-surface">Discipulado e Palavra</h3>
-          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Ensino focado na verdade libertadora de João 8:32 para quebrar correntes espirituais.</p>
-        </div>
-        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col items-center text-center">
-          <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center mb-2.5">
-            <span class="material-symbols-outlined text-[20px]" data-icon="handshake">handshake</span>
+          <!-- Compromisso Ético e Prestação de Contas -->
+          <div class="mt-5 p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40">
+            <div class="text-label-sm font-label-sm text-secondary font-bold uppercase flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px]" data-icon="verified_user">verified_user</span>
+              Princípio de Transparência
+            </div>
+            <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+              «O compromisso com Deus, a integridade, a simplicidade de vida e a prestação periódica de contas guiam este projeto com relatórios detalhados aos mantenedores.»
+            </p>
           </div>
-          <h3 class="text-label-lg font-label-lg font-bold text-on-surface">Parceria Fiel</h3>
-          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Cada oferta recebida sustenta a subsistência do missionário e os deslocamentos no campo.</p>
         </div>
       </div>
     </section>
+
+    <!-- SECTION 2: O CAMPO & POVOS NÃO ALCANÇADOS (GUINÉ-BISSAU) -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="povos-alvo">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider">
+          <span class="text-xs">★</span> Panorama Étnico &amp; Desafio Espiritual
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-headline-lg font-bold text-on-surface">
+          Os Povos Mandinga e Balanta-Mané
+        </h2>
+        <p class="text-body-md text-on-surface-variant">
+          «...E como ouvirão, se não há quem pregue? E como pregarão, se não forem enviados?» (Romanos 10:14-15)
+        </p>
+      </div>
+
+      <!-- Métricas do Campo Missionário -->
+      <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/20">
+          <div class="text-2xl md:text-3xl font-bold font-headline-lg text-primary">35</div>
+          <div class="text-xs text-on-surface-variant font-semibold mt-1 uppercase">Grupos Étnicos</div>
+          <div class="text-[11px] text-outline mt-0.5">na Guiné-Bissau</div>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/20">
+          <div class="text-2xl md:text-3xl font-bold font-headline-lg text-secondary">3.949</div>
+          <div class="text-xs text-on-surface-variant font-semibold mt-1 uppercase">Aldeias Não Alcançadas</div>
+          <div class="text-[11px] text-outline mt-0.5">de 4.326 vilas existentes</div>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/20">
+          <div class="text-2xl md:text-3xl font-bold font-headline-lg text-tertiary">2,8%</div>
+          <div class="text-xs text-on-surface-variant font-semibold mt-1 uppercase">Evangélicos no País</div>
+          <div class="text-[11px] text-outline mt-0.5">51,6% Islã • 35% Animismo</div>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/20">
+          <div class="text-2xl md:text-3xl font-bold font-headline-lg text-primary-container">218</div>
+          <div class="text-xs text-on-surface-variant font-semibold mt-1 uppercase">Igrejas Sem Pastores</div>
+          <div class="text-[11px] text-outline mt-0.5">de 359 igrejas registradas</div>
+        </div>
+      </div>
+
+      <!-- Foco Étnico Específico -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Povo Mandinga -->
+        <div class="p-6 rounded-xl bg-surface-container-low border-2 border-primary/20 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-label-sm font-label-sm uppercase font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded">
+              Povo Prioritário 1
+            </span>
+            <span class="text-xs font-code-mono font-bold text-on-surface-variant">14,7% da população</span>
+          </div>
+          <h3 class="text-xl font-headline-md font-bold text-on-surface">Povo Mandinga</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Grupo étnico de forte tradição e hegemonia muçulmana situado nas regiões norte e leste da Guiné-Bissau. Possuem dialeto próprio e uma cosmovisão religiosa arraigada, necessitando de missionários dedicados à aprendizagem da sua língua e ao relacionamento de profunda confiança mútua.
+          </p>
+          <div class="text-xs font-semibold text-primary flex items-center gap-1.5 pt-2 border-t border-outline-variant/20">
+            <span class="material-symbols-outlined text-[16px]" data-icon="location_on">location_on</span>
+            Região de Atuação: Setor de Begêne (Norte)
+          </div>
+        </div>
+
+        <!-- Povo Balanta-Mané -->
+        <div class="p-6 rounded-xl bg-surface-container-low border-2 border-secondary/20 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-label-sm font-label-sm uppercase font-bold text-secondary bg-secondary/10 px-2.5 py-0.5 rounded">
+              Povo Prioritário 2
+            </span>
+            <span class="text-xs font-code-mono font-bold text-on-surface-variant">1,0% da população</span>
+          </div>
+          <h3 class="text-xl font-headline-md font-bold text-on-surface">Povo Balanta-Mané</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Subgrupo étnico tradicionalmente animista localizado principalmente no norte da Guiné-Bissau. Nos últimos anos, muitos têm migrado para o islamismo por falta de assistência e presença evangélica. É urgente plantar a mensagem viva da graça antes que as portas se fechem.
+          </p>
+          <div class="text-xs font-semibold text-secondary flex items-center gap-1.5 pt-2 border-t border-outline-variant/20">
+            <span class="material-symbols-outlined text-[16px]" data-icon="my_location">my_location</span>
+            Urgência: Barreira contra a islamização e o medo animista
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJETO "A VERDADE QUE LIBERTA" & FASES -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="projeto">
+      <div>
+        <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+          <span class="text-xs">★</span> Estratégia Holística e Integral
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-headline-lg font-bold text-on-surface mt-1">
+          O Projeto «A Verdade Que Liberta»
+        </h2>
+        <p class="text-on-surface-variant text-body-md mt-1">
+          «E será pregado este evangelho do Reino por todo o mundo, para testemunho a todas as nações. Então virá o fim.» (Mateus 24:14)
+        </p>
+      </div>
+
+      <!-- Os 6 Pilares do Ministério -->
+      <div class="mt-8">
+        <h3 class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider mb-4 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[18px]" data-icon="foundation">foundation</span>
+          Os 6 Pilares Ministeriais
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-primary text-[24px]" data-icon="favorite">favorite</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Oração &amp; Intercessão</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-tertiary text-[24px]" data-icon="handshake">handshake</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Relacionamento &amp; Amizade</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-secondary text-[24px]" data-icon="campaign">campaign</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Evangelização Pessoal e Rádio</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-primary text-[24px]" data-icon="groups">groups</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Discipulado de Nativos</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-tertiary text-[24px]" data-icon="menu_book">menu_book</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Ensino da Palavra</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-center">
+            <span class="material-symbols-outlined text-secondary text-[24px]" data-icon="volunteer_activism">volunteer_activism</span>
+            <div class="font-bold text-xs mt-2 text-on-surface">Serviço &amp; Apoio Social</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fases de Execução: Linha do Tempo -->
+      <div class="mt-10 space-y-6">
+        <h3 class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-[18px]" data-icon="conversion_path">conversion_path</span>
+          Fases de Implementação
+        </h3>
+
+        <!-- FASE 1: Atual -->
+        <div class="p-6 rounded-xl bg-surface-container-low border-l-4 border-primary space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary text-xs font-bold uppercase">Fase 1 (Atual)</span>
+              <span class="font-headline-md font-bold text-lg sm:text-xl text-on-surface">Imersão, Linguagem, Rádio e Evangelismo</span>
+            </div>
+            <span class="text-xs font-code-mono text-primary font-bold bg-primary/10 px-2 py-1 rounded">Duração aprox.: 2 anos e meio</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs sm:text-sm text-on-surface-variant pt-2">
+            <div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+              <div class="font-bold text-on-surface flex items-center gap-1.5 mb-1 text-primary">
+                <span class="material-symbols-outlined text-[18px]" data-icon="translate">translate</span>
+                1. Estudo &amp; Dialeto
+              </div>
+              Aprendizado sistemático da língua e cosmovisão Mandinga (4 aulas/mês com professor nativo + imersão diária).
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+              <div class="font-bold text-on-surface flex items-center gap-1.5 mb-1 text-secondary">
+                <span class="material-symbols-outlined text-[18px]" data-icon="radio">radio</span>
+                2. Programa de Rádio Local
+              </div>
+              Transmissão semanal (4 emissões/mês) na rádio do Setor de Begêne, alcançando milhares de lares com a Palavra.
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+              <div class="font-bold text-on-surface flex items-center gap-1.5 mb-1 text-tertiary">
+                <span class="material-symbols-outlined text-[18px]" data-icon="travel_explore">travel_explore</span>
+                3. Cultos nas Tabancas
+              </div>
+              Deslocamento para aldeias vizinhas realizando evangelização urbana, discipulado de novos crentes e cultos devocionais.
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-tertiary-fixed/30 border border-tertiary-fixed-dim/40 flex items-start gap-3 text-xs sm:text-sm">
+            <span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5" data-icon="child_care">child_care</span>
+            <div>
+              <span class="font-bold text-on-surface">Fundo de Apoio a Crianças Vulneráveis:</span>
+              <span class="text-on-surface-variant"> Nas aldeias da Guiné-Bissau, muitas crianças órfãs ou em extrema vulnerabilidade não têm acesso a escola, roupas, saúde e alimentação diária. O projeto prestará auxílio pontual e amoroso seguindo o exemplo compassivo de Jesus.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASES 2 & 3: Visão de Médio e Longo Prazo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-xs font-bold uppercase">Fase 2</span>
+              <span class="font-headline-sm font-bold text-on-surface">Tradução e Estrutura</span>
+            </div>
+            <ul class="text-xs sm:text-sm text-on-surface-variant space-y-1.5 list-disc list-inside">
+              <li>Tradução oral e escrita de histórias bíblicas para o dialeto Mandinga</li>
+              <li>Aquisição de terreno comunitário</li>
+              <li>Construção do templo da Igreja e de um poço artesiano de água potável</li>
+            </ul>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-xs font-bold uppercase">Fase 3</span>
+              <span class="font-headline-sm font-bold text-on-surface">Desenvolvimento e Família</span>
+            </div>
+            <ul class="text-xs sm:text-sm text-on-surface-variant space-y-1.5 list-disc list-inside">
+              <li>Construção da Escola Comunitária para alfabetização de crianças e adultos</li>
+              <li>Construção da base/casa missionária</li>
+              <li>Continuidade do discipulado e estabelecimento de liderança nativa local</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ORÇAMENTO TRANSPARENTE & MANTENEDORES FIÉIS -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="orcamento">
+      <div class="border-b border-outline-variant/30 pb-4 mb-8">
+        <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+          <span class="text-xs">★</span> Mordomia e Transparência
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-headline-lg font-bold text-on-surface mt-1">
+          Orçamento Mensal do Projeto &amp; Sustento
+        </h2>
+        <p class="text-on-surface-variant text-body-md mt-1">
+          «...A parte dos que ficaram com a bagagem será a mesma dos que foram lutar; todos receberão partes iguais.» (1 Samuel 30:24)
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 1. Custo Mensal do Projeto -->
+        <div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[22px]" data-icon="work">work</span>
+                <h3 class="font-headline-sm font-bold text-lg text-on-surface">1. Operação do Projeto</h3>
+              </div>
+              <span class="text-sm font-code-mono font-bold text-primary bg-primary/10 px-2.5 py-1 rounded">
+                R$ 4.600,00 / mês
+              </span>
+            </div>
+
+            <ul class="mt-4 space-y-2.5 text-xs sm:text-sm text-on-surface">
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Programa de Rádio (4 emissões × R$ 350)</span>
+                <span class="font-code-mono font-semibold">R$ 1.400,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Gratificação à Equipe e Cooperadores Locais</span>
+                <span class="font-code-mono font-semibold">R$ 1.200,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Cultos nas Aldeias (Transporte/Combustível)</span>
+                <span class="font-code-mono font-semibold">R$ 550,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Aulas Semanais de Dialeto com Nativo</span>
+                <span class="font-code-mono font-semibold">R$ 460,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Fundo de Apoio a Crianças Vulneráveis</span>
+                <span class="font-code-mono font-semibold">R$ 400,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1">
+                <span class="text-on-surface-variant">Imprevistos e Deslocamentos Emergenciais</span>
+                <span class="font-code-mono font-semibold">R$ 500,00</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/30 flex justify-between text-xs text-on-surface-variant">
+            <span>Custo Anual Previsto:</span>
+            <span class="font-code-mono font-bold text-on-surface">R$ 51.370,00</span>
+          </div>
+        </div>
+
+        <!-- 2. Sustento do Missionário -->
+        <div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[22px]" data-icon="person">person</span>
+                <h3 class="font-headline-sm font-bold text-lg text-on-surface">2. Sustento do Missionário</h3>
+              </div>
+              <span class="text-sm font-code-mono font-bold text-secondary bg-secondary/10 px-2.5 py-1 rounded">
+                R$ 6.000,00 / mês
+              </span>
+            </div>
+
+            <ul class="mt-4 space-y-2.5 text-xs sm:text-sm text-on-surface">
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Alimentação e Subsistência Básica</span>
+                <span class="font-code-mono font-semibold">R$ 1.500,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Moradia / Aluguel na Região Norte</span>
+                <span class="font-code-mono font-semibold">R$ 1.300,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Transporte Pessoal no Campo</span>
+                <span class="font-code-mono font-semibold">R$ 1.000,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Saúde, Remédios e Cuidados Médicos</span>
+                <span class="font-code-mono font-semibold">R$ 900,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1 border-b border-outline-variant/20">
+                <span class="text-on-surface-variant">Energia Elétrica &amp; Comunicação (Internet)</span>
+                <span class="font-code-mono font-semibold">R$ 600,00</span>
+              </li>
+              <li class="flex justify-between items-center py-1">
+                <span class="text-on-surface-variant">Despesas Pessoais Extras &amp; Taxas Bancárias</span>
+                <span class="font-code-mono font-semibold">R$ 700,00</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/30 text-xs text-on-surface-variant">
+            <span>*Valores incluem taxas cambiais de transferência e impostos operacionais.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cotas de Mantenedores Fiéis -->
+      <div class="mt-8 p-6 rounded-xl bg-surface-container border border-outline-variant/40">
+        <h3 class="text-center font-headline-sm font-bold text-lg text-primary">
+          Seja um Mantenedor Fiel do Projeto
+        </h3>
+        <p class="text-center text-xs sm:text-sm text-on-surface-variant mt-1 max-w-xl mx-auto">
+          Você ou sua igreja podem adotar uma cota mensal de apoio para viabilizar as atividades ou o sustento do missionário Bacar Nhaga:
+        </p>
+
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+            <div class="text-xs uppercase font-bold text-on-surface-variant">Cota 1</div>
+            <div class="text-xl font-bold font-code-mono text-primary mt-1">R$ 100</div>
+            <div class="text-[11px] text-outline mt-0.5">mensais</div>
+          </div>
+          <div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+            <div class="text-xs uppercase font-bold text-on-surface-variant">Cota 2</div>
+            <div class="text-xl font-bold font-code-mono text-primary mt-1">R$ 200</div>
+            <div class="text-[11px] text-outline mt-0.5">mensais</div>
+          </div>
+          <div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+            <div class="text-xs uppercase font-bold text-on-surface-variant">Cota 3</div>
+            <div class="text-xl font-bold font-code-mono text-primary mt-1">R$ 300</div>
+            <div class="text-[11px] text-outline mt-0.5">mensais</div>
+          </div>
+          <div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+            <div class="text-xs uppercase font-bold text-on-surface-variant">Cota 4</div>
+            <div class="text-xl font-bold font-code-mono text-primary mt-1">R$ 400</div>
+            <div class="text-[11px] text-outline mt-0.5">mensais</div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-center">
+          <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:underline" href="https://wa.me/5561992454063?text=Ol%C3%A1%20Bacar!%20Gostaria%20de%20me%20comprometer%20como%20mantenedor%20mensal%20do%20seu%20projeto." rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[16px]" data-icon="chat">chat</span>
+            Clique aqui para confirmar sua cota de parceria via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DADOS BANCÁRIOS & PIX DIRETO -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_24px_-2px_rgba(18,38,26,0.06)]" id="dados-bancarios">
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-outline-variant/30">
+        <div class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+            <span class="material-symbols-outlined text-[24px]" data-icon="account_balance">account_balance</span>
+          </div>
+          <div>
+            <span class="text-label-sm font-label-sm text-secondary uppercase font-bold tracking-wider">Apoio Financeiro Direto</span>
+            <h2 class="text-xl sm:text-2xl font-headline-sm font-bold text-on-surface">Contribuição Bancária &amp; Pix</h2>
+          </div>
+        </div>
+        <!-- Flag Pair Emblem -->
+        <div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full text-xs font-label-sm text-on-surface-variant">
+          <span>🇬🇼 Guiné-Bissau</span>
+          <span class="text-outline-variant">•</span>
+          <span>🇧🇷 Brasil</span>
+        </div>
+      </div>
+
+      <!-- Structured Banking Grid & QR Module -->
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+        <!-- Bank Metadata Fields -->
+        <div class="md:col-span-7 space-y-2.5">
+          <div class="p-3 rounded-lg bg-surface-container-low flex justify-between items-center">
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Banco</span>
+            <span class="text-label-md font-label-md font-bold text-on-surface">Nubank (0260)</span>
+          </div>
+          <div class="p-3 rounded-lg bg-surface-container-low flex justify-between items-center">
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Agência</span>
+            <span class="text-label-md font-label-md font-code-mono font-bold text-on-surface">0001</span>
+          </div>
+          <div class="p-3 rounded-lg bg-surface-container-low flex justify-between items-center">
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Conta Corrente</span>
+            <span class="text-label-md font-label-md font-code-mono font-bold text-on-surface">219209077-4</span>
+          </div>
+          <div class="p-3 rounded-lg bg-surface-container-low flex justify-between items-center">
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Titular</span>
+            <span class="text-label-md font-label-md font-bold text-on-surface">Bacar Nhaga</span>
+          </div>
+          <div class="p-3 rounded-lg bg-surface-container-low flex justify-between items-center">
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">CPF</span>
+            <span class="text-label-md font-label-md font-code-mono font-bold text-on-surface">719.344.701-71</span>
+          </div>
+        </div>
+
+        <!-- QR Code Card Container -->
+        <div class="md:col-span-5 flex flex-col items-center text-center p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <div class="bg-surface-container-lowest p-2.5 rounded-lg shadow-inner border border-outline-variant/20 flex items-center justify-center">
+            <svg viewBox="0 0 49 49" class="w-32 h-32 sm:w-36 sm:h-36 text-on-surface" xmlns="http://www.w3.org/2000/svg">
+              <path class="qrline" stroke="#171d1a" stroke-width="1" d="M2 2.5h7m2 0h2m2 0h2m1 0h2m3 0h1m3 0h1m4 0h1m1 0h1m3 0h1m1 0h7m-45 1h1m5 0h1m2 0h1m4 0h1m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h3m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h1m2 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h3m1 0h3m3 0h1m1 0h1m1 0h3m1 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h2m1 0h1m1 0h6m2 0h1m2 0h2m2 0h3m1 0h1m1 0h3m1 0h1m-45 1h1m5 0h1m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1m3 0h4m1 0h1m1 0h1m6 0h1m5 0h1m-45 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-37 1h1m2 0h3m1 0h2m3 0h1m3 0h2m2 0h1m1 0h4m1 0h2m-37 1h1m1 0h5m2 0h1m1 0h3m3 0h1m1 0h6m2 0h1m1 0h2m2 0h1m1 0h1m2 0h5m-42 1h3m1 0h1m4 0h2m1 0h3m2 0h1m2 0h1m1 0h1m1 0h1m4 0h2m1 0h1m2 0h1m2 0h1m2 0h3m-42 1h4m1 0h3m2 0h2m3 0h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h4m2 0h1m-43 1h1m3 0h1m2 0h1m1 0h1m2 0h2m1 0h3m7 0h1m2 0h1m1 0h3m3 0h1m2 0h1m1 0h2m-42 1h3m1 0h3m3 0h3m1 0h1m1 0h2m2 0h1m2 0h1m1 0h2m2 0h1m4 0h1m1 0h1m-36 1h2m4 0h2m1 0h1m2 0h1m1 0h1m7 0h1m2 0h2m1 0h2m1 0h1m2 0h1m5 0h2m-42 1h1m1 0h1m1 0h1m4 0h1m3 0h2m1 0h3m1 0h8m2 0h1m1 0h2m1 0h4m1 0h2m-43 1h1m2 0h1m2 0h3m2 0h1m2 0h2m1 0h1m5 0h1m2 0h1m2 0h4m3 0h1m2 0h1m1 0h1m1 0h1m-41 1h5m1 0h1m2 0h3m2 0h1m1 0h2m4 0h1m2 0h1m3 0h3m2 0h2m1 0h1m-41 1h1m3 0h1m1 0h1m2 0h2m1 0h2m1 0h2m1 0h1m2 0h2m4 0h1m1 0h1m1 0h1m3 0h1m2 0h1m2 0h3m-44 1h6m2 0h2m1 0h3m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m3 0h1m1 0h6m-39 1h1m1 0h2m1 0h1m4 0h2m1 0h2m1 0h1m9 0h1m1 0h4m2 0h3m1 0h5m-44 1h2m1 0h6m1 0h1m1 0h3m2 0h1m1 0h8m5 0h8m1 0h1m-42 1h2m1 0h1m3 0h3m1 0h1m1 0h4m2 0h1m3 0h1m2 0h1m2 0h1m2 0h1m1 0h2m3 0h1m1 0h3m-44 1h1m2 0h1m1 0h1m1 0h1m1 0h2m2 0h2m2 0h1m1 0h1m1 0h1m1 0h3m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h2m-43 1h1m2 0h1m3 0h1m1 0h2m1 0h2m2 0h2m1 0h1m3 0h1m3 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h1m1 0h7m1 0h1m2 0h2m1 0h1m1 0h1m1 0h5m1 0h2m1 0h2m2 0h9m1 0h2m-43 1h1m1 0h1m3 0h1m1 0h1m2 0h1m1 0h6m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h2m-43 1h7m1 0h1m1 0h2m1 0h2m8 0h3m2 0h2m2 0h1m2 0h1m1 0h1m1 0h2m-43 1h1m3 0h2m1 0h4m2 0h4m2 0h3m1 0h2m2 0h2m1 0h3m2 0h2m2 0h1m1 0h4m-45 1h1m2 0h2m1 0h3m2 0h2m2 0h1m3 0h1m1 0h1m3 0h3m1 0h1m6 0h1m3 0h2m1 0h1m-43 1h1m2 0h1m3 0h1m7 0h2m4 0h2m3 0h2m1 0h2m1 0h1m2 0h2m1 0h1m2 0h1m-43 1h2m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m2 0h1m4 0h1m1 0h4m5 0h3m2 0h3m1 0h1m-44 1h3m1 0h1m2 0h3m1 0h1m2 0h2m1 0h4m1 0h1m1 0h1m2 0h1m1 0h5m1 0h5m2 0h1m-43 1h2m2 0h3m1 0h1m2 0h1m2 0h2m2 0h1m1 0h1m3 0h1m8 0h2m1 0h1m2 0h1m1 0h1m2 0h1m-45 1h2m3 0h1m3 0h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h3m4 0h1m1 0h1m4 0h1m4 0h3m-41 1h1m1 0h1m1 0h2m1 0h1m4 0h2m2 0h1m3 0h1m2 0h1m1 0h1m10 0h3m-42 1h4m5 0h1m1 0h5m4 0h4m3 0h6m1 0h5m1 0h3m-44 1h1m2 0h2m1 0h1m1 0h6m3 0h2m1 0h5m2 0h1m2 0h1m2 0h1m2 0h8m-36 1h3m3 0h1m1 0h2m1 0h2m3 0h1m5 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h7m3 0h3m1 0h1m1 0h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-43 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h5m1 0h2m8 0h6m-42 1h1m1 0h3m1 0h1m1 0h1m3 0h1m8 0h1m5 0h1m1 0h2m1 0h2m2 0h2m2 0h1m2 0h2m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m3 0h1m3 0h2m2 0h2m2 0h1m3 0h4m1 0h1m2 0h2m-44 1h1m5 0h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m2 0h2m2 0h2m5 0h1m-43 1h7m1 0h4m2 0h1m6 0h2m1 0h2m1 0h1m5 0h2m2 0h5m1 0h1"/>
+            </svg>
+          </div>
+          <p class="mt-2 text-label-sm font-label-sm text-on-surface-variant leading-tight">
+            Abra o app do seu banco e escaneie o QR Code
+          </p>
+        </div>
+      </div>
+
+      <!-- Highlight Pix Key Copy Box -->
+      <div class="mt-6 p-4 rounded-xl bg-surface-container border-2 border-primary/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <div class="flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-bold">
+            <span class="material-symbols-outlined text-[16px]" data-icon="key">key</span>
+            CHAVE PIX (TELEFONE)
+          </div>
+          <div class="text-xl sm:text-2xl font-bold font-code-mono text-on-surface mt-0.5 tracking-wide">
+            (61) 99245-4063
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md font-label-md active:scale-[0.98] transition-all border border-outline-variant/40" id="pixCopiaColaBtn" onclick="copyPixCopiaECola()" title="Copiar código Pix Copia e Cola">
+            <span class="material-symbols-outlined text-[18px]" data-icon="qr_code" id="pixCopiaColaIcon">qr_code</span>
+            <span id="pixCopiaColaText">Pix Copia e Cola</span>
+          </button>
+          <button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md font-label-md hover:bg-primary-container active:scale-[0.98] transition-all shadow-sm font-semibold" id="pixCopyBtn" onclick="copyPixKey('61992454063')">
+            <span class="material-symbols-outlined text-[18px]" data-icon="content_copy" id="pixCopyIcon">content_copy</span>
+            <span id="pixCopyText">Copiar Chave</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Institutional Endorsement: AMIDE Missões -->
+      <div class="mt-6 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center p-2 shrink-0">
+            <span class="material-symbols-outlined text-primary text-[28px]" data-icon="public">public</span>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-primary">Agência Missionária AMIDE</div>
+            <div class="text-xs text-on-surface-variant">Associação Missionária para Difusão do Evangelho • Há mais de 27 anos enviando obreiros aos PNAs</div>
+            <div class="text-[11px] text-outline mt-0.5">Caixa Postal 729 - CEP 71510-970 | Rod. DF 250, Km 6,5, Brasília - DF</div>
+          </div>
+        </div>
+        <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-xs font-semibold text-primary hover:bg-surface-container-high transition-colors" href="http://www.amide.org.br" rel="noopener noreferrer" target="_blank">
+          <span>www.amide.org.br</span>
+          <span class="material-symbols-outlined text-[14px]" data-icon="open_in_new">open_in_new</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 6: INTERCESSÃO & CANAL DE NOTÍCIAS -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 md:p-10 shadow-[0_4px_20px_-2px_rgba(18,38,26,0.05)]" id="intercessao">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <!-- Intercessão -->
+        <div class="md:col-span-7 space-y-4">
+          <div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            <span class="text-xs">★</span> Batalha Espiritual em Oração
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-headline-lg font-bold text-on-surface">
+            Seja um Intercessor Fiel
+          </h2>
+          <p class="text-body-md text-on-surface-variant leading-relaxed">
+            A realidade do norte da Guiné-Bissau é marcada por intensa batalha espiritual, cegueira religiosa e idolatria animista. Cremos que toda vitória no campo começa nos joelhos da igreja de Cristo.
+          </p>
+          <div class="p-4 rounded-xl bg-surface-container-low border-l-4 border-secondary space-y-2 text-sm text-on-surface">
+            <p class="italic text-quote-display">
+              «Ninguém pode entrar na casa do valente para roubar-lhe os bens sem primeiro amarrá-lo; só então poderá saquear a sua casa.» (Marcos 3:27)
+            </p>
+            <div class="text-xs text-on-surface-variant pt-1">
+              <strong>Motivos constantes:</strong> Abertura dos corações dos Mandingas e Balanta-Mané, saúde física e proteção espiritual de Bacar, aprendizado ágil do dialeto e portas abertas na rádio local.
+            </div>
+          </div>
+          <div>
+            <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary/90 transition-transform active:scale-[0.98] shadow-sm font-semibold" href="https://wa.me/5561992454063?text=Ol%C3%A1%20Bacar!%20Desejo%20fazer%20parte%20do%20grupo%20de%20intercessores%20e%20receber%20seus%20pedidos%20de%20ora%C3%A7%C3%A3o." rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[18px]" data-icon="volunteer_activism">volunteer_activism</span>
+              Quero Orar pelo Projeto no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Receba Notícias e Informativos -->
+        <div class="md:col-span-5 bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[18px]" data-icon="campaign">campaign</span>
+            </div>
+            <h3 class="font-headline-sm font-bold text-lg text-on-surface">Boletim Missionário</h3>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Cadastre-se para receber cartas informativas com fotos, testemunhos dos batismos e relatórios periódicos da missão.
+          </p>
+          <form class="space-y-2.5" onsubmit="event.preventDefault(); alert('Obrigado pelo seu compromisso! Bacar Nhaga entrará em contato para incluir você na lista de informativos periódicos.');">
+            <input class="w-full px-3 py-2 text-xs sm:text-sm rounded-lg bg-surface border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Seu nome completo" required="" type="text"/>
+            <input class="w-full px-3 py-2 text-xs sm:text-sm rounded-lg bg-surface border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="seu.email@exemplo.com" required="" type="email"/>
+            <button class="w-full py-2.5 rounded-lg bg-primary text-on-primary text-xs sm:text-sm font-semibold hover:bg-primary-container transition-colors shadow-sm" type="submit">
+              Receber Relatórios Periódicos
+            </button>
+          </form>
+          <div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+            <span>Envio direto de pedidos:</span>
+            <span class="font-code-mono font-semibold text-primary">+55 (61) 99245-4063</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Bottom Cultural Ribbon Band -->
-  <div aria-hidden="true" class="w-full flex h-1.5 overflow-hidden mt-8">
+  <div aria-hidden="true" class="w-full flex h-2 overflow-hidden mt-12">
     <div class="w-1/3 bg-secondary"></div>
     <div class="w-1/3 bg-tertiary-fixed-dim"></div>
     <div class="w-1/3 bg-primary-container"></div>
   </div>
 
   <!-- Shared Component: Footer -->
-  <footer class="bg-surface-container-low text-primary docked full-width bottom mt-auto border-t border-outline-variant/30">
-    <div class="flex flex-col items-center justify-center w-full px-4 py-8 md:py-12 max-w-4xl mx-auto text-center gap-4">
+  <footer class="bg-surface-container-low text-primary border-t border-outline-variant/30">
+    <div class="flex flex-col items-center justify-center w-full px-4 py-8 md:py-12 max-w-5xl mx-auto text-center gap-4">
       <!-- Brand in Footer -->
-      <div class="text-headline-sm font-headline-sm font-semibold text-primary">
-        Bacar Nhaga • Guiné-Bissau
+      <div class="text-headline-sm font-headline-sm font-bold text-primary text-xl">
+        Bacar Nhaga • Projeto A Verdade Que Liberta
       </div>
-      <!-- Links List from JSON -->
-      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-label-sm font-label-sm">
-        <a class="text-on-surface-variant hover:text-primary transition-colors duration-150 active:opacity-80" href="https://www.amide.org.br" rel="noopener noreferrer" target="_blank">
-          AMIDE Missões
-        </a>
-        <span class="text-outline-variant">•</span>
-        <a class="text-on-surface-variant hover:text-primary transition-colors duration-150 active:opacity-80" href="#dados-bancarios">
-          Política de Transparência
-        </a>
-        <span class="text-outline-variant">•</span>
-        <a class="text-primary font-semibold hover:text-primary transition-colors duration-150 active:opacity-80" href="#dados-bancarios">
-          Chave Pix
-        </a>
-        <span class="text-outline-variant">•</span>
-        <a class="text-on-surface-variant hover:text-primary transition-colors duration-150 active:opacity-80" href="https://wa.me/5561992454063" rel="noopener noreferrer" target="_blank">
-          Contato WhatsApp
-        </a>
-      </div>
-      <!-- Copyright text from JSON -->
-      <p class="text-body-sm font-body-sm text-on-surface-variant/80 max-w-md">
-        © 2024 Bacar Nhaga • AMIDE Missões. Todos os direitos reservados. Guiné-Bissau &amp; Brasil.
+      <p class="text-xs sm:text-sm text-tertiary font-serif italic max-w-lg">
+        «Pois a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.» (Habacuque 2:14)
       </p>
-      <!-- Mission Statement Subtext -->
-      <div class="text-label-sm font-label-sm text-tertiary">
-        «Missão aos Povos Não Alcançados da Guiné-Bissau, África»
+
+      <!-- Links List -->
+      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs text-on-surface-variant pt-2">
+        <a class="hover:text-primary transition-colors" href="#missao">Início</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#testemunho">Testemunho</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#povos-alvo">Povos Mandinga &amp; Balanta-Mané</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#projeto">O Projeto</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#orcamento">Transparência</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="#dados-bancarios">Chave Pix</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors" href="http://www.amide.org.br" rel="noopener noreferrer" target="_blank">AMIDE Missões</a>
+      </div>
+
+      <!-- Copyright & References -->
+      <div class="text-[11px] text-outline max-w-xl border-t border-outline-variant/20 pt-4 mt-2">
+        © 2026 Bacar Nhaga • AMIDE Missões • Igreja Evangélica de Brá (GB) &amp; IP Paranoá (DF).<br/>
+        Referências: AMIDE, ALEM, Joshua Project e parcerias missionárias locais.
       </div>
     </div>
   </footer>
@@ -528,7 +898,6 @@
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(keyText).then(updatePixUi);
       } else {
-        // Fallback for older browsers or non-secure contexts
         const textArea = document.createElement("textarea");
         textArea.value = keyText;
         textArea.style.position = "fixed";
@@ -541,7 +910,7 @@
           document.execCommand('copy');
           updatePixUi();
         } catch (err) {
-          console.error('Falha ao copiar:', err);
+          console.error('Falha ao copiar chave pix:', err);
         }
         document.body.removeChild(textArea);
       }
@@ -593,7 +962,7 @@
 
       const originalText = text.innerText;
       icon.innerText = "check_circle";
-      text.innerText = "Chave Pix Copiada!";
+      text.innerText = "Chave Copiada!";
       btn.classList.remove('bg-primary');
       btn.classList.add('bg-primary-container');
 
@@ -603,23 +972,6 @@
         btn.classList.remove('bg-primary-container');
         btn.classList.add('bg-primary');
       }, 3000);
-    }
-
-    function copyToClipboard(val, triggerBtn) {
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(val).then(() => {
-          const originalTitle = triggerBtn.getAttribute('title');
-          triggerBtn.setAttribute('title', 'Copiado!');
-          const icon = triggerBtn.querySelector('.material-symbols-outlined');
-          if (icon) {
-            icon.innerText = 'check';
-            setTimeout(() => {
-              icon.innerText = 'content_copy';
-              triggerBtn.setAttribute('title', originalTitle);
-            }, 2000);
-          }
-        });
-      }
     }
   </script>
 </body>
